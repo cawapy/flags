@@ -229,7 +229,7 @@ module beads() {
                 modeIndex = cursorY > 1 ? ((y < cursorY) ? 0 : (y > cursorY) ? 2 : 1) :
                                            (y < cursorY) ? 1 : (y > cursorY) ? 2 : 1;
                 color(color, transparencies[modeIndex]) {
-                    translate([x,0.5*y,0]) rotate([0, 90, 0]) cylinder(d = sizes[modeIndex], h = sizes[modeIndex]);
+                    translate([x,0.5*y,0]) rotate([0, 90, 0]) cylinder(d = sizes[modeIndex], h = sizes[modeIndex], center=true);
                 }
             }
         }
