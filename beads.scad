@@ -215,7 +215,7 @@ function belarusFlagPattern() = [
 
 beads($fn=64);
 
-cursorY = 33;
+cursorY = 65;
 transparencies = [0.3, 1, 0.05];
 sizes = [.9, 1.1, .6];
 
